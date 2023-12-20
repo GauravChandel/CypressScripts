@@ -8,4 +8,6 @@ module.exports = defineConfig({
   },
   // viewportWidth:700,   // -> If you want to set the particular height and width for every test cases
   // viewportHeight:900
+
+  "includeShadowDom":true
 });
