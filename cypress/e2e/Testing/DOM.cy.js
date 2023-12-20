@@ -1,7 +1,7 @@
 /// <reference types = "cypress" />
 
 describe(' Find the shadow DOM elements',()=>{
-    it.skip('Find the shadow elements',()=>{
+    it.skipy('Find the shadow elements',()=>{
         cy.visit('https://selectorshub.com/xpath-practice-page/').wait(2000)
         cy.get('.sgpb-popup-close-button-6').click()
         cy.get('#userName').shadow().find('#kils').type('something')   // this method will be used if we have shadow elements
