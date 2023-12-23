@@ -1,0 +1,13 @@
+{
+    "name":{
+        "firstname":"Gaurav",
+        "lastname": "Pal"
+    },
+    "email":"cypressAB1@dispostable.com",
+    "teleohone":"+917310739999",
+    "passwords":{
+        "password":"Cypress123!!",
+        "confirmpassword":"Cypress123!!"
+    }
+}
+
