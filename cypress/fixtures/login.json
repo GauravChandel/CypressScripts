@@ -1,4 +1,14 @@
 {
-  "email": "lambdatest.Cypress@disposable.com",
-  "password": "Cypress123!!"
+  "login":{
+    "email":"test.qa@dispostable.com",
+    "password":"Cypress123!!"
+  },
+
+"product":{
+  "productName":"Macbook"
+},
+
+"message":{
+  "sucessmessage":" Success: You have added MacBook to your shopping cart! "
+}
 }
