@@ -12,6 +12,7 @@ describe("How will we handle the new tab",()=>{
 
     it('Handling the new tab -- Approach 2nd',()=>{
         cy.get('.sgpb-popup-close-button-6').click()
-        cy.contains('Course Link').invoke('attr','target','_self').click()
+        cy.contains('Consider a small Donation and support this page.').invoke('attr','target','_self').click()
+        cy.get('div>h4>a').should('contain','Checkout here the name of our Patrons')
     })
-})
+})  

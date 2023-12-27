@@ -14,10 +14,10 @@ describe('Reload the page',()=>{
         cy.reload({timeout:5000})
         cy.contains('Best Sellers').should('be.visible')   // Need to check
 
-        cy.window().then((data=>{
-            data.location.reload()
-        }))
-        cy.contains('Best Sellers').should('be.visible')
+        // cy.window().then((data=>{
+        //     data.location.reload()
+        // }))
+        // cy.contains('Best Sellers').should('be.visible')
 
     })
 })

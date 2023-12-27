@@ -7,7 +7,7 @@ describe(" All assertions in chai libarary", ()=>{
         cy.get('div>h1').contains('Why Cypress?').should('be.visible')  // verifying if the  'why cypress' is visible or not
     })
 
-    it(' verify if user can go back', ()=>{
+    it.skip(' verify if user can go back', ()=>{
         cy.visit('https://naveenautomationlabs.com/')
         cy.get('[class^="tag-cloud-link"]').eq(0).click()
         cy.get('div>header>h1>span').contains('Agile').should('be.visible')

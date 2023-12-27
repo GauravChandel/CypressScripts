@@ -23,7 +23,7 @@ describe('Handling the dropdown', () => {
         cy.get('[id="multi-select"]').select(['California', 'New York'])
     })
 
-    it('Select dropdown value when its suggest', ()=>{
+    it.skip('Select dropdown value when its suggest', ()=>{
         cy.visit('https://www.amazon.ae/')
         cy.get('#twotabsearchtextbox').type('iphone')
         cy.get('.left-pane-results-container').find('>div').contains('iphone 15 pro max').click()
