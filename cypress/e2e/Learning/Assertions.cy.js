@@ -12,9 +12,9 @@ describe(" All assertions in chai libarary", ()=>{
         cy.get('[class^="tag-cloud-link"]').eq(0).click()
         cy.get('div>header>h1>span').contains('Agile').should('be.visible')
         cy.go('back')   // if user wants to go to back page
-        cy.go('-1')     // anothoer way to go back
-        cy.go('forward')
-        cy.go('1')
+    //     cy.go('-1')     // anothoer way to go back
+    //     cy.go('forward')
+    //     cy.go('1')
     })
 
 })
