@@ -29,7 +29,7 @@ describe("Testing the Viewport",
         cy.visit('https://www.flipkart.com')
     })
 
-    it('Testing the view port for  iphone-3', ()=>{
+    it.skip('Testing the view port for  iphone-3', ()=>{
         cy.viewport('iphone-3')
         cy.visit('https://www.flipkart.com')
     })

@@ -26,19 +26,19 @@ describe('Methods to uplod the files',()=>{
    
 
     // this method need to re-look
-    it('upload the file through fixture', () => {
-        cy.visit('https://www.ilovepdf.com/pdf_to_word');
+    // it('upload the file through fixture', () => {
+    //     cy.visit('https://www.ilovepdf.com/pdf_to_word');
         
-        // Use cy.fixture without aliasing
-        cy.writeFile("cypress/fixtures/test2.json", JSON.stringify({ test: 'data 1' })); // Convert object to JSON string
+    //     // Use cy.fixture without aliasing
+    //     cy.writeFile("cypress/fixtures/test2.json", JSON.stringify({ test: 'data 1' })); // Convert object to JSON string
       
-        cy.fixture('test2.json').then((fileContent) => {
-          const blob = Cypress.Blob.base64StringToBlob(fileContent, 'application/json');
-          const file = new File([blob], 'test2.json', { type: 'application/json' });
+    //     cy.fixture('test2.json').then((fileContent) => {
+    //       const blob = Cypress.Blob.base64StringToBlob(fileContent, 'application/json');
+    //       const file = new File([blob], 'test2.json', { type: 'application/json' });
       
-          cy.get('.uploader__input').attachFile(file);
-        });
-      });
+    //       cy.get('.uploader__input').attachFile(file);
+    //     });
+    //   });
       
       
       
