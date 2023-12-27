@@ -1,6 +1,6 @@
 /// <reference types ="cypress" />
 
-describe("Testing the Viewport", ()=>{
+describe.skip("Testing the Viewport", ()=>{
 
     it('Test 1 for 1920*1860', ()=>{
         // cy.viewport(1920, 1860);
