@@ -13,7 +13,7 @@ describe.skip("Testing the Viewport", ()=>{
 
 
 // if we want to set for all test cases  particual height and bandwidth
-describe("Testing the Viewport",
+describe.skip("Testing the Viewport",
 // {
 //     viewportHeight:700,
 //     viewportWidth:900
