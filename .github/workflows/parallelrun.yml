@@ -1,0 +1,35 @@
+name: Parallel Run
+
+on: push
+
+jobs:                                                          #this job is single but add to cart run and register is dynamic
+  Add-to-cart-Run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Install npm dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+            command: npm run AddTOCart    #AddTocart this name is mentioned in package.json file and its file path 
+
+  Regitser-Flow: 
+    runs-on: ubuntu-latest
+            
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+            
+     # Install npm dependencies, cache them correctly
+     # and run all Cypress tests
+    - name: Cypress run
+      uses: cypress-io/github-action@v6
+      with:
+          command: npm run registerflow
+
+
+    
