@@ -18,6 +18,7 @@ jobs:
             browser: firefox
 
       - name: Upload the cypress html report on git hub actions
+        if: always() 
         uses: actions/upload-artifact@v4
         with:
             name: Create the HTML report for every tesr cases
