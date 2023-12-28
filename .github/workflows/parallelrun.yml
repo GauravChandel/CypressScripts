@@ -31,5 +31,12 @@ jobs:                                                          #this job is sing
       with:
           command: npm run registerflow
 
+    #If you want to upload your html report on CI/CD
+    - name: Upload the cypress html report on git hub actions
+      uses: actions/upload-artifact@v4
+      with:
+        name: Mocha Awesome HTML Report
+        path: cypress/reports/html  #giving the path of which folder needs to be upload
+
 
     
