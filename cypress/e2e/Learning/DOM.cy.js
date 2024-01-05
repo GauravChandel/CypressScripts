@@ -16,7 +16,7 @@ describe(' Find the shadow DOM elements',()=>{
     it('Third way to handle DOM shadow elements',()=>{
         cy.visit('https://selectorshub.com/xpath-practice-page/').wait(2000)
         cy.get('.sgpb-popup-close-button-6').click()
-        cy.get('#kils', {"includeShadowDom":true}).type('something else')    // we have to add in config file 'includeShadowDom:'true'
+        cy.get('#kils', {"includeShadowDom":true}).type('something else') 
     })
     
 })
