@@ -24,7 +24,8 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-const cypress = require("cypress")
+// const cypress = require("cypress")
+
 
 
 Cypress.Commands.add('login', (email, password) => { 
@@ -36,8 +37,7 @@ Cypress.Commands.add('login', (email, password) => {
 
 })
 
-
-cypress.Commands.add('LoginwitBasicAuth',()=>{
+Cypress.Commands.add('LoginwitBasicAuth',()=>{
 
     cy.visit('https://authenticationtest.com/HTTPAuth/', { 
         auth: {
@@ -46,3 +46,6 @@ cypress.Commands.add('LoginwitBasicAuth',()=>{
         }
      })
 })
+
+
+
