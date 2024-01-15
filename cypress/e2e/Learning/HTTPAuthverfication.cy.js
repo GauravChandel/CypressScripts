@@ -3,7 +3,7 @@
 
 describe('Validate if the website has HTTP Auth method for login', () =>{
 
-    it.skip('1st approach of Login with Auth',()=>{
+    it('1st approach of Login with Auth',()=>{
         cy.visit('https://authenticationtest.com/HTTPAuth/', { 
         auth: {
             username:'user',
