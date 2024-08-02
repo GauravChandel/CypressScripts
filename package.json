@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.6.6",
+    "cypress": "^13.13.2",
     "cypress-mochawesome-reporter": "^3.7.0"
   },
   "dependencies": {
@@ -187,5 +187,13 @@
     "wrappy": "^1.0.2",
     "yallist": "^4.0.0",
     "yauzl": "^2.10.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GauravChandel/CypressScripts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GauravChandel/CypressScripts/issues"
+  },
+  "homepage": "https://github.com/GauravChandel/CypressScripts#readme"
 }
